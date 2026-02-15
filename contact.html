@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Set character encoding and responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - AdeDev Aesthetic Clinic</title>
+  <title>Contact - iamhardhey</title>
+  <!-- Include all styling from main stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- Mobile navigation hamburger menu -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  <nav class="sidebar">
-    <label for="menu-toggle" class="close-btn">&times;</label>
+  <label for="menu-toggle" class="hamburger">
+    ☰
+  </label>
+
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">
+      ✕
+    </label>
     <div class="sidebar-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+      <h3>iamhardhey</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Premium Beauty</p>
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Contact AdeDev Aesthetic Clinic</h1>
-      <p>We would love to hear from you! Book your appointment or send us a message.</p>
+  <!-- Page header with call-to-action -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contact iamhardhey</h1>
+      <p>Get in touch with our team to book your consultation or ask any questions</p>
+      <button class="cta-btn">Start Now</button>
     </div>
-  </header>
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        🎧
+      </div>
+    </div>
+  </section>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
+  <!-- 
+    CONTACT SECTION
+    Contains:
+    - Contact form for new inquiries
+    - Phone, email, location, and hours info
+    - Social media links
+  -->
+  <section class="why-choose-us">
     <h2>Get in Touch</h2>
     <div class="contact-container">
       <!-- Contact Form -->
@@ -44,42 +62,152 @@
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <input type="tel" placeholder="Phone Number" required>
+        <select required style="width: 100%; padding: 14px 16px; margin-bottom: 20px; border-radius: 8px; border: 2px solid #e0e0e0; font-family: inherit; font-size: 1rem;">
+          <option value="">Select a Service</option>
+          <option value="facial">Advanced Facials</option>
+          <option value="laser">Laser Therapy</option>
+          <option value="injectables">Anti-Aging Injectables</option>
+          <option value="body">Body Contouring</option>
+          <option value="peel">Chemical Peels</option>
+          <option value="microneedle">Microneedling</option>
+        </select>
         <textarea placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="cta-btn">Send Message</button>
       </form>
 
       <!-- Contact Info -->
       <div class="contact-info">
-        <h3>Our Contact Information</h3>
-        <p><strong>Address:</strong> 123 Beauty Lane, City, Country</p>
-        <p><strong>Email:</strong> info@adedevclinic.com</p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>Opening Hours:</strong> Mon–Fri: 9AM–6PM | Sat: 10AM–4PM | Sun: Closed</p>
+        <h3>📞 Phone</h3>
+        <p><strong>Main Line:</strong> 1-800-BEAUTY-1<br>(1-800-238-8891)</p>
+        <p><strong>Consultation:</strong> Monday–Friday: 9AM–6PM<br><strong>Saturday:</strong> 10AM–4PM EST</p>
 
-        <!-- Social Media Links -->
-        <h3>Follow Us</h3>
-        <div class="social-links">
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <h3 style="margin-top: 30px;">📧 Email</h3>
+        <p><strong>General Inquiries:</strong> <a href="mailto:info@iamhardhey.com" style="color: #e8746a; text-decoration: underline;">info@iamhardhey.com</a></p>
+        <p><strong>Consultations:</strong> <a href="mailto:book@iamhardhey.com" style="color: #e8746a; text-decoration: underline;">book@iamhardhey.com</a></p>
+        <p>Response time: Within 24 business hours</p>
+
+        <h3 style="margin-top: 30px;">📍 Location</h3>
+        <p><strong>iamhardhey</strong><br>123 Beauty Lane<br>Premium City, State 12345<br>United States</p>
+        <p><strong>Parking:</strong> Free covered parking available</p>
+
+        <h3 style="margin-top: 30px;">🕐 Hours of Operation</h3>
+        <p><strong>Monday–Thursday:</strong> 9:00 AM – 6:00 PM<br><strong>Friday:</strong> 9:00 AM – 7:00 PM<br><strong>Saturday:</strong> 10:00 AM – 4:00 PM<br><strong>Sunday & Holidays:</strong> Closed</p>
+
+        <h3 style="margin-top: 30px;">💬 Connect With Us</h3>
+        <p><strong>Follow our latest beauty tips and transformations:</strong></p>
+        <div class="social-icons" style="justify-content: flex-start; margin-top: 15px;">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="TikTok">🎵</a>
+          <a href="#" title="LinkedIn">💼</a>
         </div>
       </div>
     </div>
-
-    <!-- Map -->
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
   </section>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2>Ready for Your Transformation?</h2>
+    <p>Book a free consultation with one of our expert aestheticians today</p>
+    <button class="cta-btn-large">Book Your Free Consultation</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <!-- Branding Section -->
+        <div class="footer-section footer-brand">
+          <h3>iamhardhey</h3>
+          <p class="brand-subtitle">Premium Beauty</p>
+          <p class="brand-description">Your trusted partner in beauty and wellness. Experience transformative treatments delivered by expert professionals.</p>
+          <div class="footer-badges">
+            <span class="badge">⭐ Award Winning</span>
+            <span class="badge">🏥 Certified</span>
+            <span class="badge">✓ Trusted</span>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Advanced Facials</a></li>
+            <li><a href="services.html">Laser Therapy</a></li>
+            <li><a href="services.html">Anti-Aging</a></li>
+            <li><a href="services.html">Body Contouring</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p><a href="tel:1-800-238-8891">1-800-BEAUTY-1</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:info@iamhardhey.com">info@iamhardhey.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Address</p>
+              <p>123 Beauty Lane<br>Premium City, State</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <p class="social-description">Connect with us on social media</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook" class="social-link">f</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+            <a href="#" title="Twitter" class="social-link">𝕏</a>
+            <a href="#" title="LinkedIn" class="social-link">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 iamhardhey. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="divider">•</span>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2026 AdeDev Aesthetic Clinic. All Rights Reserved.</p>
-    <a href="contact.html" class="cta-btn">Book Appointment</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

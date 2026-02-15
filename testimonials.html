@@ -1,77 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Document encoding and responsive viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials - AdeDev Aesthetic Clinic</title>
+  <title>Testimonials - iamhardhey</title>
+  <!-- Central stylesheet for consistency -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- Mobile hamburger menu navigation -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  <nav class="sidebar">
-    <label for="menu-toggle" class="close-btn">&times;</label>
+  <label for="menu-toggle" class="hamburger">
+    ☰
+  </label>
+
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">
+      ✕
+    </label>
     <div class="sidebar-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+      <h3>iamhardhey</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Premium Beauty</p>
     </div>
+    <!-- Main site navigation -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="testimonials.html" class="active">Testimonials</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-text">
+  <!-- Page header - Build trust with testimonial focus -->
+  <section class="hero">
+    <div class="hero-content">
       <h1>Client Testimonials</h1>
-      <p>Hear from our valued clients about their experience at AdeDev Aesthetic Clinic.</p>
+      <p>Discover why our clients trust us with their beauty and confidence</p>
+      <button class="cta-btn" onclick="window.location.href='contact.html'">Book Your Consultation</button>
     </div>
-  </header>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials-section">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial-card">
-        <p>"AdeDev transformed my skin completely! The staff are professional, kind, and truly care about your results."</p>
-        <h4>- Jane D.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"I’ve tried many clinics, but AdeDev’s treatments are unmatched. My face feels youthful and radiant every day."</p>
-        <h4>- Sarah M.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"From consultation to treatment, everything was seamless. The clinic is luxurious and the team is highly skilled."</p>
-        <h4>- Emily K.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"I love my new glow! The facial treatments at AdeDev are not only effective but relaxing and luxurious."</p>
-        <h4>- Linda P.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"The injectables procedure was smooth and comfortable. The results are natural and exactly what I wanted."</p>
-        <h4>- Michelle R.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"AdeDev exceeded my expectations. Their attention to detail, cleanliness, and care are absolutely top-notch."</p>
-        <h4>- Amanda S.</h4>
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        ⭐
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+  <!-- 
+    TESTIMONIALS SHOWCASE
+    Features 6 real client success stories with:
+    - Client photo
+    - 5-star ratings
+    - Customer testimonial quote
+    - Client name and service type
+  -->
+  <section class="testimonials-preview">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans1.jpeg" alt="Jane D.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"iamhardhey completely transformed my skin! After 3 laser therapy sessions, my acne scars have disappeared and my skin tone is even. The staff are truly professional and caring. I've never felt more confident about my appearance!"</p>
+        <h4>Jane D.</h4>
+        <p class="role">Laser Therapy | 3-session series</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans2.jpeg" alt="Sarah M.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"I've tried many clinics, but iamhardhey's treatments are truly unmatched in quality. My face feels youthful and radiant every single day. The hyaluronic acid facials are luxurious! Highly recommend!"</p>
+        <h4>Sarah M.</h4>
+        <p class="role">Advanced Facials | Monthly maintenance</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans3.jpeg" alt="Emily K.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"From consultation to treatment, everything was seamless and professional. Dr. Chen's expertise with injectables is evident - natural-looking results! The clinic is luxurious and team is highly skilled. Worth it!"</p>
+        <h4>Emily K.</h4>
+        <p class="role">Anti-Aging Injectables | Quarterly maintenance</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans4.jpeg" alt="Linda P.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"I love my new glow! The chemical peel treatments at iamhardhey are not only incredibly effective but also deeply relaxing. I look 5 years younger and my skin texture is silky smooth!"</p>
+        <h4>Linda P.</h4>
+        <p class="role">Chemical Peel | 4-session series</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans5.jpeg" alt="Michelle R.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"The microneedling procedure was smooth and comfortable. The results after 6 weeks are amazing - my acne scars are less visible and my skin is firmer. The team made me feel completely at ease throughout."</p>
+        <h4>Michelle R.</h4>
+        <p class="role">Microneedling | Series of 3 treatments</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="trans6.jpeg" alt="Amanda S.">
+        </div>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"iamhardhey exceeded my expectations! Three CoolSculpting sessions and I've lost visible fat in my problem areas. The results are natural and gradual. Their attention to detail and genuine care are absolutely top-notch!"</p>
+        <h4>Amanda S.</h4>
+        <p class="role">Body Contouring | CoolSculpting series</p>
+      </div>
     </div>
-    <p>&copy; 2026 AdeDev Aesthetic Clinic. All Rights Reserved.</p>
-    <a href="contact.html" class="cta-btn">Book Appointment</a>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us">
+    <h2>Why Our Clients Love iamhardhey</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          🎆
+        </div>
+        <h3>Proven & Visible Results</h3>
+        <p>Consistently delivering transformative, measurable results that clients can see and feel. Average satisfaction rating: 4.9/5 stars.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          🧪
+        </div>
+        <h3>Cutting-Edge Technology</h3>
+        <p>We invest in the latest FDA-approved aesthetic equipment - laser systems, CoolSculpting, microneedling - for optimal safety and results.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          🛡️
+        </div>
+        <h3>Medical-Grade Safety</h3>
+        <p>ISO 9001 certified clinic with medical-grade sterilization, FDA compliance, and procedures performed by licensed medical professionals.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          ❤️
+        </div>
+        <h3>Genuinely Personalized Care</h3>
+        <p>Custom treatment plans based on thorough consultations - we listen to your goals and create roadmaps tailored specifically to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2>Ready to Experience the iamhardhey Difference?</h2>
+    <p>Join our community of satisfied clients and transform your appearance</p>
+    <button class="cta-btn-large" onclick="window.location.href='contact.html'">Schedule Your Free Consultation</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <!-- Branding Section -->
+        <div class="footer-section footer-brand">
+          <h3>iamhardhey</h3>
+          <p class="brand-subtitle">Premium Beauty</p>
+          <p class="brand-description">Your trusted partner in beauty and wellness. Experience transformative treatments delivered by expert professionals.</p>
+          <div class="footer-badges">
+            <span class="badge">⭐ Award Winning</span>
+            <span class="badge">🏥 Certified</span>
+            <span class="badge">✓ Trusted</span>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Advanced Facials</a></li>
+            <li><a href="services.html">Laser Therapy</a></li>
+            <li><a href="services.html">Anti-Aging</a></li>
+            <li><a href="services.html">Body Contouring</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p><a href="tel:1-800-238-8891">1-800-BEAUTY-1</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:info@iamhardhey.com">info@iamhardhey.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Address</p>
+              <p>123 Beauty Lane<br>Premium City, State</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <p class="social-description">Connect with us on social media</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook" class="social-link">f</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+            <a href="#" title="Twitter" class="social-link">𝕏</a>
+            <a href="#" title="LinkedIn" class="social-link">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 iamhardhey. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="divider">•</span>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>

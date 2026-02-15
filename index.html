@@ -1,164 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Document Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AdeDev Aesthetic Clinic</title>
+  <title>iamhardhey - Premium Beauty & Wellness</title>
+  <!-- Main stylesheet with all responsive design rules -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- 
+    MOBILE NAVIGATION SIDEBAR
+    - Hamburger menu for mobile devices
+    - Uses checkbox hack for toggle functionality
+    - Provides full navigation menu access
+  -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  <nav class="sidebar">
-    <label for="menu-toggle" class="close-btn">&times;</label>
+  <label for="menu-toggle" class="hamburger">☰</label>
+
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">✕</label>
+    <!-- Brand section display in sidebar -->
     <div class="sidebar-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+      <h3>iamhardhey</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Premium Beauty</p>
     </div>
+    <!-- Main navigation links for all pages -->
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Welcome to AdeDev Aesthetic Clinic</h1>
-      <p>Luxury skincare and aesthetic treatments tailored for your unique beauty.</p>
-      <a href="contact.html" class="cta-btn">Book Appointment</a>
+  <!-- 
+    HERO SECTION - Landing Page Banner
+    - Main value proposition with CTA
+    - Attractive imagery placeholder
+    - Sets tone for entire clinic brand
+  -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Enhance Your Natural Beauty</h1>
+      <p>Experience premium aesthetic treatments designed for your unique beauty goals</p>
+      <button class="cta-btn" onclick="window.location.href='contact.html'">Book Your Consultation</button>
     </div>
-  </header>
-
-  <!-- About Preview -->
-  <section class="about-preview">
-    <h2>About Us</h2>
-    <p>AdeDev Aesthetic Clinic has been delivering premium aesthetic services since 2015. Our team combines medical expertise with luxury care to help you achieve your skincare goals in a safe and relaxing environment.</p>
-    <ul>
-      <li>Certified and experienced aestheticians</li>
-      <li>State-of-the-art skincare technologies</li>
-      <li>Tailored treatments for every skin type</li>
-      <li>Luxurious and hygienic facilities</li>
-    </ul>
-    <a href="about.html" class="cta-btn">Learn More</a>
+    <!-- Hero section image for visual appeal -->
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        🧖
+      </div>
+    </div>
   </section>
 
-  <!-- Featured Services -->
-  <section class="services-preview">
-    <h2>Our Services</h2>
-    <div class="services-cards">
+  <!-- 
+    SERVICES PREVIEW SECTION
+    - Showcases 4 key service categories
+    - Each has icon, title, description, and CTA link
+    - Encourages users to explore full services page
+  -->
+  <section class="services-preview" id="services">
+    <h2>Our Popular Services</h2>
+    <div class="services-grid">
       <div class="service-card">
-        <img src="facial.jpeg" alt="Facial Treatment">
+        <div class="service-icon">
+          😊
+        </div>
         <h3>Facial Treatments</h3>
-        <p>Rejuvenate your skin with advanced facials, anti-aging treatments, and hydration therapy designed for radiant, healthy skin.</p>
+        <p>Professional facials using advanced techniques - HydraFacial, microdermabrasion, and custom facials tailored to your unique skin type and concerns.</p>
+        <p><strong>Duration:</strong> 45-90 minutes | <strong>Results:</strong> Immediate glow with lasting benefits</p>
+        <a href="services.html" class="learn-more">Learn More →</a>
+      </div>
+      <!-- Additional service cards shown here to introduce service variety -->
+      <div class="service-card">
+        <div class="service-icon">
+          ✨
+        </div>
+        <h3>Anti-Aging Solutions</h3>
+        <p>Combat fine lines and wrinkles with Botox, dermal fillers, and chemical peels. Our medical team creates natural-looking results that enhance your features.</p>
+        <p><strong>Duration:</strong> 30-60 minutes | <strong>Results:</strong> Visible within 3-7 days</p>
+        <a href="services.html" class="learn-more">Learn More →</a>
       </div>
       <div class="service-card">
-        <img src="laser.jpeg" alt="Laser Therapy">
-        <h3>Laser Therapy</h3>
-        <p>Professional laser treatments for hair removal, pigmentation correction, and skin resurfacing using the latest technology.</p>
+        <div class="service-icon">
+          ❤️
+        </div>
+        <h3>Skin Rejuvenation</h3>
+        <p>Laser therapies and microneedling treatments to improve texture, tone, and appearance. Reduces acne scars, pigmentation, and improves overall skin health.</p>
+        <p><strong>Duration:</strong> 60-90 minutes | <strong>Results:</strong> Progressive improvement over 4-6 weeks</p>
+        <a href="services.html" class="learn-more">Learn More →</a>
       </div>
       <div class="service-card">
-        <img src="bodycon.jpeg" alt="Body Contouring">
+        <div class="service-icon">
+          🤝
+        </div>
         <h3>Body Contouring</h3>
-        <p>Non-invasive sculpting procedures to tone and shape your body, reduce cellulite, and improve skin elasticity.</p>
-      </div>
-      <div class="service-card">
-        <img src="injectable.jpeg" alt="Injectables">
-        <h3>Injectables</h3>
-        <p>Safe Botox and dermal fillers to restore youthful volume, smooth wrinkles, and enhance facial features naturally.</p>
-      </div>
-    </div>
-    <a href="services.html" class="cta-btn">View All Services</a>
-  </section>
-
-  <!-- Sliding Gallery -->
-  <section class="gallery-slider">
-    <h2>Our Transformations</h2>
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1" checked>
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-        <input type="radio" name="radio-btn" id="radio6">
-
-
-
-
-        <div class="slide first">
-          <img src="trans1.jpeg" alt="Before & After 1">
-        </div>
-        <div class="slide">
-          <img src="trans2.jpeg" alt="Before & After 2">
-        </div>
-        <div class="slide">
-          <img src="trans3.jpeg" alt="Before & After 3">
-        </div>
-        <div class="slide">
-          <img src="trans4.jpeg" alt="Before & After 3">
-        </div>
-        <div class="slide">
-          <img src="trans5.jpeg" alt="Before & After 3">
-        </div>
-        <div class="slide">
-          <img src="trans6.jpeg" alt="Before & After 3">
-        </div>
-
-
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn6"></div>
-        </div>
-      </div>
-
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-        <label for="radio6" class="manual-btn"></label>
+        <p>Non-invasive body treatments using CoolSculpting and radiofrequency technology. Shape, tone, and contour without surgery or downtime.</p>
+        <p><strong>Duration:</strong> 30-120 minutes | <strong>Results:</strong> Visible transformation in 3 months</p>
+        <a href="services.html" class="learn-more">Learn More →</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Preview -->
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us">
+    <h2>Why Choose iamhardhey?</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          🏆
+        </div>
+        <h3>Expert Professionals</h3>
+        <p>Our team consists of board-certified medical professionals and licensed aestheticians with 10+ years of experience in aesthetic medicine.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          🧪
+        </div>
+        <h3>Advanced Technology</h3>
+        <p>We invest in cutting-edge equipment including FDA-approved lasers, CoolSculpting systems, and state-of-the-art microneedling devices.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          🛡️
+        </div>
+        <h3>100% Safe</h3>
+        <p>All procedures follow strict ISO 9001 certified safety protocols, health code standards, and are performed in a medical-grade sterile environment.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          ⭐
+        </div>
+        <h3>Personalized Care</h3>
+        <p>Each treatment plan is customized consultation-based approach - we analyze your skin and goals to create your ideal treatment roadmap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
   <section class="testimonials-preview">
     <h2>What Our Clients Say</h2>
-    <div class="testimonial-cards">
+    <div class="testimonials-grid">
       <div class="testimonial-card">
-        <p>"A transformative experience! My skin looks flawless and feels amazing. The staff are professional and welcoming." </p>
-        <h4>- Jane D.</h4>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"iamhardhey completely transformed my skin! After just 3 treatments, my acne scars have dramatically improved. The entire staff is professional, caring, and truly invested in results!"</p>
+        <h4>Sarah Johnson</h4>
+        <p class="role">Laser Therapy Client</p>
       </div>
       <div class="testimonial-card">
-        <p>"I love the personalized care I receive at AdeDev. Every visit feels luxurious and relaxing."</p>
-        <h4>- Sarah M.</h4>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"Professional staff, amazing results, and exceptional aftercare support. I recommend iamhardhey to all my friends and family! Worth every penny investment."</p>
+        <h4>Michael Chen</h4>
+        <p class="role">Anti-Aging Injectables Client</p>
       </div>
       <div class="testimonial-card">
-        <p>"Highly recommend for anyone wanting results with safety and comfort. The clinic is spotless and professional."</p>
-        <h4>- Emily K.</h4>
+        <div class="stars">
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+          ⭐
+        </div>
+        <p>"The treatments exceeded my expectations! My skin looks rejuvenated, feels smoother, and I've never felt more confident about my appearance. Highly satisfied!"</p>
+        <h4>Emma Williams</h4>
+        <p class="role">Facial Treatments Client</p>
       </div>
     </div>
-    <a href="testimonials.html" class="cta-btn">Read More Testimonials</a>
   </section>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2>Ready to Enhance Your Beauty?</h2>
+    <p>Join thousands of satisfied clients who've transformed their appearance</p>
+    <button class="cta-btn-large" onclick="window.location.href='contact.html'">Schedule Your Free Consultation Today</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <!-- Branding Section -->
+        <div class="footer-section footer-brand">
+          <h3>iamhardhey</h3>
+          <p class="brand-subtitle">Premium Beauty</p>
+          <p class="brand-description">Your trusted partner in beauty and wellness. Experience transformative treatments delivered by expert professionals.</p>
+          <div class="footer-badges">
+            <span class="badge">⭐ Award Winning</span>
+            <span class="badge">🏥 Certified</span>
+            <span class="badge">✓ Trusted</span>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Advanced Facials</a></li>
+            <li><a href="services.html">Laser Therapy</a></li>
+            <li><a href="services.html">Anti-Aging</a></li>
+            <li><a href="services.html">Body Contouring</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p><a href="tel:1-800-238-8891">1-800-BEAUTY-1</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:info@iamhardhey.com">info@iamhardhey.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Address</p>
+              <p>123 Beauty Lane<br>Premium City, State</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <p class="social-description">Connect with us on social media</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook" class="social-link">f</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+            <a href="#" title="Twitter" class="social-link">𝕏</a>
+            <a href="#" title="LinkedIn" class="social-link">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 iamhardhey. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="divider">•</span>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2026 AdeDev Aesthetic Clinic. All Rights Reserved.</p>
-    <a href="contact.html" class="cta-btn">Book Appointment</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

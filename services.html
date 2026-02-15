@@ -1,81 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Document metadata and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - AdeDev Aesthetic Clinic</title>
+  <title>Services - iamhardhey</title>
+  <!-- Centralized styling for all pages -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- 
+    MOBILE NAVIGATION - Present on all pages
+    Provides responsive hamburger menu for mobile users
+  -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  <nav class="sidebar">
-    <label for="menu-toggle" class="close-btn">&times;</label>
+  <label for="menu-toggle" class="hamburger">☰</label>
+
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">✕</label>
+    <!-- Clinic branding in sidebar -->
     <div class="sidebar-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+      <h3>iamhardhey</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Premium Beauty</p>
     </div>
+    <!-- Navigation to all clinic pages -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Our Services</h1>
-      <p>Comprehensive aesthetic treatments for face, body, and skin health.</p>
+  <!-- 
+    HERO SECTION - Page introduction
+    Explains the services offering and encourages booking
+  -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Premium Services</h1>
+      <p>Comprehensive aesthetic treatments for every skin type and beauty goal</p>
+      <button class="cta-btn">Book Your Service</button>
     </div>
-  </header>
-
-  <section class="services-section">
-    <h2>Our Professional Services</h2>
-    <div class="services-cards">
-      <div class="service-card">
-        <img src="facial.jpeg" alt="Facial Treatments">
-        <h3>Facial Treatments</h3>
-        <p>Hydrating, anti-aging, and rejuvenating facials tailored to your skin type. <br> Duration: 60 mins. <br> Benefits: Smooth, radiant skin.</p>
-      </div>
-      <div class="service-card">
-        <img src="laser.jpeg" alt="Laser Therapy">
-        <h3>Laser Therapy</h3>
-        <p>Safe and effective laser solutions for hair removal, pigmentation, and resurfacing. <br> Duration: 30-60 mins. <br> Benefits: Even skin tone, hair-free skin.</p>
-      </div>
-      <div class="service-card">
-        <img src="bodycon.jpeg" alt="Body Contouring">
-        <h3>Body Contouring</h3>
-        <p>Non-invasive treatments to reduce fat, tighten skin, and sculpt your body. <br> Duration: 45-60 mins. <br> Benefits: Toned appearance and cellulite reduction.</p>
-      </div>
-      <div class="service-card">
-        <img src="injectable.jpeg" alt="Injectables">
-        <h3>Injectables</h3>
-        <p>Botox and dermal fillers for wrinkle reduction and facial enhancement. <br> Duration: 30 mins. <br> Benefits: Youthful, natural-looking results.</p>
-      </div>
-      <div class="service-card">
-        <img src="chemical.jpeg" alt="Chemical Peels">
-        <h3>Chemical Peels</h3>
-        <p>Professional skin exfoliation to improve texture and tone. <br> Duration: 45 mins.<br> Benefits: Brighter, smoother skin.</p>
-      </div>
-      <div class="service-card">
-        <img src="micro.jpeg" alt="Microneedling">
-        <h3>Microneedling</h3>
-        <p>Stimulates collagen production for scar reduction and firming. <br> Duration: 60 mins. <br> Benefits: Rejuvenated skin and improved elasticity.</p>
+    <!-- Decorative hero image -->
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        🧖
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+  <!-- 
+    SERVICES SHOWCASE
+    All 6 available aesthetic treatments with:
+    - Service image
+    - Treatment name & duration
+    - Detailed description
+    - Key benefits listed
+  -->
+  <section class="services-preview">
+    <h2>Our Expert Treatments</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-image">
+          <img src="facial.jpeg" alt="Advanced Facials Treatment">
+        </div>
+        <h3>Advanced Facials</h3>
+        <p><strong>Duration:</strong> 60-90 minutes | <strong>Downtime:</strong> None</p>
+        <p>Professional facials tailored to your skin type including HydraFacial, microdermabrasion, and custom treatments. Our licensed aestheticians analyze your skin and customize each treatment for optimal results and radiant glow.</p>
+        <p><strong>Benefits:</strong> Radiant complexion, improved texture, reduced blemishes, hydrated skin, natural glow</p>
+        <p><strong>Best for:</strong> All skin types | <strong>Results timeline:</strong> Immediate</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="laser.jpeg" alt="Laser Therapy Treatment">
+        </div>
+        <h3>Laser Therapy</h3>
+        <p><strong>Duration:</strong> 30-60 minutes | <strong>Downtime:</strong> Minimal (1-3 days)</p>
+        <p>FDA-approved laser treatments for precise targeting of various skin concerns including hair removal, pigmentation correction, acne scars, and skin resurfacing. Safe and effective with proven results.</p>
+        <p><strong>Benefits:</strong> Even skin tone, permanent hair reduction, improved texture, scar improvement, brighter complexion</p>
+        <p><strong>Best for:</strong> Laser hair removal, pigmentation, scars | <strong>Results timeline:</strong> 2-4 weeks</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="injectable.jpeg" alt="Anti-Aging Injectables">
+        </div>
+        <h3>Anti-Aging Injectables</h3>
+        <p><strong>Duration:</strong> 30-45 minutes | <strong>Downtime:</strong> None to minimal</p>
+        <p>Botox and dermal fillers administered by certified medical professionals to reduce wrinkles, restore volume, and enhance facial features naturally. Customized for balanced, authentic results.</p>
+        <p><strong>Benefits:</strong> Smoother skin, reduced wrinkles, enhanced features, restored volume, youthful appearance</p>
+        <p><strong>Best for:</strong> Anti-aging | <strong>Results timeline:</strong> 3-7 days to full results</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="bodycon.jpeg" alt="Body Contouring Treatment">
+        </div>
+        <h3>Body Contouring</h3>
+        <p><strong>Duration:</strong> 60-120 minutes | <strong>Downtime:</strong> None</p>
+        <p>Non-invasive CoolSculpting and radiofrequency procedures to reduce fat, tighten skin, and sculpt your ideal body contours without surgery or pain. Proven FDA-approved technology.</p>
+        <p><strong>Benefits:</strong> Sculpted appearance, cellulite reduction, skin tightening, improved body shape, lasting results</p>
+        <p><strong>Best for:</strong> Body sculpting | <strong>Results timeline:</strong> 3-6 months for full results</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="chemical.jpeg" alt="Chemical Peels Treatment">
+        </div>
+        <h3>Chemical Peels</h3>
+        <p><strong>Duration:</strong> 45-60 minutes | <strong>Downtime:</strong> 3-7 days</p>
+        <p>Professional medical-grade skin exfoliation using customized chemical solutions to improve texture, tone, and brightness. Multiple peel strengths available for different skin concerns and conditions.</p>
+        <p><strong>Benefits:</strong> Brighter complexion, smoother texture, reduced pigmentation, improved clarity, refined pores</p>
+        <p><strong>Best for:</strong> Texture, pigmentation | <strong>Results timeline:</strong> 1-2 months for full results</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="microneedle.jpeg" alt="Microneedling Treatment">
+        </div>
+        <h3>Microneedling</h3>
+        <p><strong>Duration:</strong> 60 minutes | <strong>Downtime:</strong> 2-3 days</p>
+        <p>Collagen-induction therapy using state-of-the-art microneedling devices that safely stimulate natural healing and collagen production. Proven effective for scars, wrinkles, and skin elasticity.</p>
+        <p><strong>Benefits:</strong> Improved firmness, scar reduction, fine line improvement, enhanced collagen, improved elasticity</p>
+        <p><strong>Best for:</strong> Scars, aging skin | <strong>Results timeline:</strong> 4-6 weeks for visible results</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="rejuvenation.jpeg" alt="Skin Rejuvenation Treatment">
+        </div>
+        <h3>Complete Skin Rejuvenation</h3>
+        <p><strong>Duration:</strong> 90-120 minutes | <strong>Downtime:</strong> Varies by treatment combo</p>
+        <p>Comprehensive customized treatments combining multiple proven modalities (facials, lasers, serums) to restore your skin's youthful radiance, vitality, and glow from within.</p>
+        <p><strong>Benefits:</strong> Renewed glow, improved elasticity, visible rejuvenation, radiant appearance, comprehensive results</p>
+        <p><strong>Best for:</strong> Overall skin renewal | <strong>Results timeline:</strong> Immediate to 2-4 weeks</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="consultation.jpeg" alt="Skin Consultation">
+        </div>
+        <h3>Free Consultation & Skin Analysis</h3>
+        <p><strong>Duration:</strong> 30 minutes | <strong>Cost:</strong> Complimentary</p>
+        <p>Meet with our skincare experts for a comprehensive skin analysis, personalized assessment, and custom treatment recommendations. No obligation, just expert guidance tailored to your goals.</p>
+        <p><strong>Includes:</strong> Skin analysis, recommendation plan, pricing options, question answering</p>
+        <p><strong>Next step:</strong> Book now | <strong>Valid:</strong> Anytime</p>
+      </div>
     </div>
-    <p>&copy; 2026 AdeDev Aesthetic Clinic. All Rights Reserved.</p>
-    <a href="contact.html" class="cta-btn">Book Appointment</a>
+  </section>
+
+  <!-- CONSULTATION SECTION -->
+  <section class="cta-section">
+    <h2>Find Your Perfect Treatment</h2>
+    <p>Not sure which service is right for you? Book a free consultation with our expert aestheticians</p>
+    <button class="cta-btn-large" onclick="window.location.href='contact.html'">Schedule Your Free Consultation</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <!-- Branding Section -->
+        <div class="footer-section footer-brand">
+          <h3>iamhardhey</h3>
+          <p class="brand-subtitle">Premium Beauty</p>
+          <p class="brand-description">Your trusted partner in beauty and wellness. Experience transformative treatments delivered by expert professionals.</p>
+          <div class="footer-badges">
+            <span class="badge">⭐ Award Winning</span>
+            <span class="badge">🏥 Certified</span>
+            <span class="badge">✓ Trusted</span>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Advanced Facials</a></li>
+            <li><a href="services.html">Laser Therapy</a></li>
+            <li><a href="services.html">Anti-Aging</a></li>
+            <li><a href="services.html">Body Contouring</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p><a href="tel:1-800-238-8891">1-800-BEAUTY-1</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:info@iamhardhey.com">info@iamhardhey.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Address</p>
+              <p>123 Beauty Lane<br>Premium City, State</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <p class="social-description">Connect with us on social media</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook" class="social-link">f</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+            <a href="#" title="Twitter" class="social-link">𝕏</a>
+            <a href="#" title="LinkedIn" class="social-link">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 iamhardhey. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="divider">•</span>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,83 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- HTML5 meta tags for proper rendering -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - AdeDev Aesthetic Clinic</title>
+  <title>Blog - iamhardhey</title>
+  <!-- Main stylesheet with responsive design -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
+  <!-- Navigation hamburger for mobile devices -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  <nav class="sidebar">
-    <label for="menu-toggle" class="close-btn">&times;</label>
+  <label for="menu-toggle" class="hamburger">
+    ☰
+  </label>
+
+  <div class="sidebar">
+    <label for="menu-toggle" class="close-btn">
+      ✕
+    </label>
     <div class="sidebar-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+      <h3>iamhardhey</h3>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">Premium Beauty</p>
     </div>
+    <!-- Links to all site pages -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Blog</h1>
-      <p>Insights, tips, and expert advice on skincare and aesthetics.</p>
+  <!-- Page introduction section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>iamhardhey Beauty Blog</h1>
+      <p>Expert insights, skincare tips, and aesthetic advice from our professionals</p>
+      <button class="cta-btn">Read Latest</button>
     </div>
-  </header>
-
-  <!-- Blog Section -->
-  <section class="blog-section">
-    <h2>Latest Articles</h2>
-    <div class="blog-cards">
-      <div class="blog-card">
-        <img src="images/blog1.jpg" alt="Tips for glowing skin">
-        <h3>5 Tips for Glowing Skin</h3>
-        <p>Discover simple, everyday skincare practices to maintain radiant, healthy skin. <a href="#">Read More</a></p>
-      </div>
-      <div class="blog-card">
-        <img src="images/blog2.jpg" alt="Laser Treatments Explained">
-        <h3>Laser Treatments Explained</h3>
-        <p>Everything you need to know about laser therapies: benefits, safety, and what to expect. <a href="#">Read More</a></p>
-      </div>
-      <div class="blog-card">
-        <img src="images/blog3.jpg" alt="Body Contouring Myths">
-        <h3>Body Contouring Myths</h3>
-        <p>Debunking common misconceptions about non-invasive body sculpting procedures. <a href="#">Read More</a></p>
-      </div>
-      <div class="blog-card">
-        <img src="images/blog4.jpg" alt="Choosing the Right Facial">
-        <h3>Choosing the Right Facial</h3>
-        <p>Learn how to select facial treatments that target your unique skin concerns. <a href="#">Read More</a></p>
-      </div>
-      <div class="blog-card">
-        <img src="images/blog5.jpg" alt="Skincare Routine Essentials">
-        <h3>Skincare Routine Essentials</h3>
-        <p>Step-by-step guide to building a simple yet effective skincare routine. <a href="#">Read More</a></p>
-      </div>
-      <div class="blog-card">
-        <img src="images/blog6.jpg" alt="Benefits of Microneedling">
-        <h3>Benefits of Microneedling</h3>
-        <p>How microneedling stimulates collagen production and improves skin texture. <a href="#">Read More</a></p>
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        📰
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="images/logo.png" alt="AdeDev Logo">
-      <h3>AdeDev Aesthetic Clinic</h3>
+  <!-- 
+    BLOG ARTICLES SECTION
+    Displays 8 educational articles about aesthetic treatments,
+    skincare routines, and beauty wellness tips
+  -->
+  <section class="services-preview">
+    <h2>Latest Articles & Tips</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          ✨
+        </div>
+        <h3>5 Tips for Glowing Skin</h3>
+        <p>Master the skincare basics with our expert-recommended practices: hydration, sun protection, regular exfoliation, quality ingredients, and consistency. Learn how to achieve and maintain that coveted radiant glow naturally.</p>
+        <p><small>Published: Feb 10, 2026 | Read time: 5 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          💡
+        </div>
+        <h3>Laser Treatments Explained</h3>
+        <p>Comprehensive guide to modern laser therapy: how different laser types target specific skin concerns, expected results, safety considerations, downtime, and realistic timelines. Myth-busting included.</p>
+        <p><small>Published: Feb 8, 2026 | Read time: 8 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          ⚡
+        </div>
+        <h3>Body Contouring Myths & Facts</h3>
+        <p>Debunking 10 common misconceptions about non-invasive body sculpting. Learn what's actually possible with modern technology, realistic results, and how to discern fact from marketing hype.</p>
+        <p><small>Published: Feb 5, 2026 | Read time: 6 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          😊
+        </div>
+        <h3>Choosing Your Perfect Facial</h3>
+        <p>A quiz-style guide to selecting the ideal facial treatment for your unique skin type. Dry? Oily? Sensitive? Find your match with our beginner's guide and expert recommendations.</p>
+        <p><small>Published: Feb 1, 2026 | Read time: 4 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          🧖
+        </div>
+        <h3>Build Your Skincare Routine</h3>
+        <p>Step-by-step guide to building an effective skincare regimen that works. Cleanser, toner, serum, moisturizer, SPF - we explain the why behind each step and best products.</p>
+        <p><small>Published: Jan 28, 2026 | Read time: 7 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          🧭
+        </div>
+        <h3>Microneedling: Science & Results</h3>
+        <p>The complete science behind collagen induction therapy. Learn how microneedling works, realistic results timeline, expected improvements, aftercare, and maintenance regimen for lasting benefits.</p>
+        <p><small>Published: Jan 25, 2026 | Read time: 9 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          🛡️
+        </div>
+        <h3>Injectables Safety Guide</h3>
+        <p>Everything about Botox and fillers: how they work, safety protocols, FDA approval, realistic results, how to spot inexperienced practitioners, and what to expect before and after.</p>
+        <p><small>Published: Jan 22, 2026 | Read time: 8 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          🛍️
+        </div>
+        <h3>Natural Beauty: Our Philosophy</h3>
+        <p>Discover iamhardhey's approach to enhancing your natural features rather than changing them. Enhancement, not transformation - our principles for subtle, sophisticated aesthetic results.</p>
+        <p><small>Published: Jan 19, 2026 | Read time: 5 min</small></p>
+        <a href="#" class="learn-more">Read Article →</a>
+      </div>
     </div>
-    <p>&copy; 2026 AdeDev Aesthetic Clinic. All Rights Reserved.</p>
-    <a href="contact.html" class="cta-btn">Book Appointment</a>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="cta-section">
+    <h2>Subscribe to Our Beauty Tips</h2>
+    <p>Get expert skincare advice and special offers delivered to your inbox every month</p>
+    <button class="cta-btn-large">Join Our Newsletter</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <!-- Branding Section -->
+        <div class="footer-section footer-brand">
+          <h3>iamhardhey</h3>
+          <p class="brand-subtitle">Premium Beauty</p>
+          <p class="brand-description">Your trusted partner in beauty and wellness. Experience transformative treatments delivered by expert professionals.</p>
+          <div class="footer-badges">
+            <span class="badge">⭐ Award Winning</span>
+            <span class="badge">🏥 Certified</span>
+            <span class="badge">✓ Trusted</span>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Advanced Facials</a></li>
+            <li><a href="services.html">Laser Therapy</a></li>
+            <li><a href="services.html">Anti-Aging</a></li>
+            <li><a href="services.html">Body Contouring</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p><a href="tel:1-800-238-8891">1-800-BEAUTY-1</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:info@iamhardhey.com">info@iamhardhey.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Address</p>
+              <p>123 Beauty Lane<br>Premium City, State</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Section -->
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <p class="social-description">Connect with us on social media</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook" class="social-link">f</a>
+            <a href="#" title="Instagram" class="social-link">📷</a>
+            <a href="#" title="Twitter" class="social-link">𝕏</a>
+            <a href="#" title="LinkedIn" class="social-link">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 iamhardhey. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="#">Terms of Service</a>
+            <span class="divider">•</span>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
